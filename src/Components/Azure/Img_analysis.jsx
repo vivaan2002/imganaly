@@ -1,4 +1,3 @@
-import React from 'react'
 
 async function Img_analysis(img_url) {
   console.log("Clicked");

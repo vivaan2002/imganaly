@@ -1,4 +1,3 @@
-import React from 'react'
 import { BlobServiceClient } from "@azure/storage-blob";
 
 async function Upload_img(image){
