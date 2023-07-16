@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import FTest from './Components/FTest';
+import Inputcard from './Components/Inputcard';
 import Navbarcal from './Components/Navbarcal';
 import Aboutus from './Components/Extra/Aboutus';
 import Contactus from './Components/Extra/Contactus';
@@ -16,7 +16,7 @@ function App() {
     <Router>
       <Navbarcal/>
       <Routes>
-        <Route exact path="/" element={<FTest/>} />
+        <Route exact path="/" element={<Inputcard/>} />
         <Route path="/about" element={<Aboutus/>} />
         <Route path="/contact" element={<Contactus/>} />
         <Route path="/faq" element={<Faq/>} />
@@ -25,18 +25,5 @@ function App() {
     </Router>
   );
 }
-
-// function App() {
-//   return (
-//     <div> 
-//       <main>
-//         {/* <Heading/> */}
-//         {/* <Navbar_cal/> */}
-//         <Navbar_cal/>
-//         <F_Test/>
-//       </main>
-//     </div>
-//   );
-// }
 
 export default App;
