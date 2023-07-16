@@ -25,7 +25,7 @@ export default function FTest() {
             
             <div>
                 <Card style={{ margin: "10rem",backgroundColor:'#dcdcde',width:"50%"}} >
-                    <Card.Img style={{ width:"96%" ,margin:"1rem"}} src={imageUrl} />
+                    <Card.Img style={{ margin:"2%" ,width:"96%"}} src={imageUrl} />
                     <Card.Body>
                         <Card.Title>Upload Image</Card.Title>
                         <Card.Subtitle className="mb-2 text-muted"></Card.Subtitle>
