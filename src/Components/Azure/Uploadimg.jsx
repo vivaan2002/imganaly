@@ -1,6 +1,6 @@
 import { BlobServiceClient } from "@azure/storage-blob";
 
-async function Upload_img(image){
+async function Uploadimg(image){
     var imageurl ="New Url";
     console.log("upload2");
 
@@ -27,4 +27,4 @@ async function Upload_img(image){
     return (imageurl);
 }
 
-export default Upload_img
+export default Uploadimg

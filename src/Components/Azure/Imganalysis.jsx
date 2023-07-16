@@ -1,5 +1,5 @@
 
-async function Img_analysis(img_url) {
+async function Imganalysis(img_url) {
   console.log("Clicked");
     const response = await fetch("https://test292002.cognitiveservices.azure.com/computervision/imageanalysis:analyze?api-version=2023-02-01-preview&features=read,caption&language=en", {
       method: 'POST',
@@ -15,4 +15,4 @@ async function Img_analysis(img_url) {
   return (result)
 }
 
-export default Img_analysis
+export default Imganalysis

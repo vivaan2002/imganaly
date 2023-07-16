@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 
-const Navbar_cal = () => {
+const Navbarcal = () => {
   return (
     <Navbar bg="dark" variant="dark">
         <Navbar.Brand href="/">Image OCR</Navbar.Brand>
@@ -18,4 +18,4 @@ const Navbar_cal = () => {
   )
 }
 
-export default Navbar_cal
+export default Navbarcal

@@ -1,10 +1,10 @@
 import React,{ useState } from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Upload_img from "./Azure/Upload_img";
-import Img_analysis from "./Azure/Img_analysis";
+import Uploadimg from "./Azure/Uploadimg";
+import Imganalysis from "./Azure/Imganalysis";
 
-export default function F_Test() {
+export default function FTest() {
     const [image, setimage]=useState('https://images.imyfone.com/filme/video/Make-a-YouTube-Video-on-Your-Phone-upload.jpg');
     const [imageUrl, setimageUrl]=useState('https://images.imyfone.com/filme/video/Make-a-YouTube-Video-on-Your-Phone-upload.jpg');
     const [visiblness, setvisiblness]=useState("");
@@ -16,7 +16,7 @@ export default function F_Test() {
             return;
         }    
         console.log("Hello World");
-        await Upload_img(image).then(async (res)=>{setimageUrl(res);await Img_analysis(res).then((res)=>{settext(res);})});
+        await Uploadimg(image).then(async (res)=>{setimageUrl(res);await Imganalysis(res).then((res)=>{settext(res);})});
 
         setvisiblness("visible");
     }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Contact_us = () => {
+const Contactus = () => {
   return (
     <div style={{margin:"1rem"}}>
       <h1>Contact Us</h1>
@@ -11,4 +11,4 @@ const Contact_us = () => {
   )
 }
 
-export default Contact_us
+export default Contactus

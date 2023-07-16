@@ -1,7 +1,7 @@
 import React from 'react'
 import { Accordion } from 'react-bootstrap'
 
-const About_us = () => {
+const Aboutus = () => {
   return (
     <div>
       <h1>About Us</h1>
@@ -23,4 +23,4 @@ const About_us = () => {
   )
 }
 
-export default About_us
+export default Aboutus
