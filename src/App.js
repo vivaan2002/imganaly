@@ -1,25 +1,42 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import F_Test from './Components/F_Test';
+import Navbar_cal from './Components/Navbar_cal';
+import About_us from './Components/Extra/About_us';
+import Contact_us from './Components/Extra/Contact_us';
+import Faq from './Components/Extra/Faq';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Footer from './Components/Footer/Footer';
+// import { Nav, Navbar } from 'react-bootstrap';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <Router>
+      <Navbar_cal/>
+      <Routes>
+        <Route exact path="/" element={<F_Test/>} />
+        <Route path="/about" element={<About_us/>} />
+        <Route path="/contact" element={<Contact_us/>} />
+        <Route path="/faq" element={<Faq/>} />
+      </Routes>
+      <Footer/>
+    </Router>
   );
 }
+
+// function App() {
+//   return (
+//     <div> 
+//       <main>
+//         {/* <Heading/> */}
+//         {/* <Navbar_cal/> */}
+//         <Navbar_cal/>
+//         <F_Test/>
+//       </main>
+//     </div>
+//   );
+// }
 
 export default App;
