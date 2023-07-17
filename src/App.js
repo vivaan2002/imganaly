@@ -12,7 +12,7 @@ import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
-    
+    document.title = "Image Reader",
     <Router>
       <Navbarcal/>
       <Routes>
