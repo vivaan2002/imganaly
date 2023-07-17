@@ -8,9 +8,9 @@ async function Uploadimg(image){
     // upload to azure
     // Start
     const containerName = `uploaded`;
-    const sasToken = 'sp=rcwl&st=2023-07-16T19:05:56Z&se=2023-07-17T03:05:56Z&spr=https&sv=2022-11-02&sr=c&sig=pGtleClP36fRBtmFplEEz%2B1zhHrA%2B7sqkTcvsbCttn0%3D';
-    const storageAccountName = 'testuploadimg2002';
-    // const storageAccountURL = 'https://testuploadimg2002.blob.core.windows.net/uploaded?sp=rcwl&st=2023-07-15T19:44:31Z&se=2023-07-16T03:44:31Z&spr=https&sv=2022-11-02&sr=c&sig=3ryMXUZEPHgf5HTgrUlN1iIIcExy7UoWKA7HDLh7xgM%3D';
+    const sasToken = 'sp=rcwl&st=2023-07-17T14:50:01Z&se=2023-08-17T22:50:01Z&spr=https&sv=2022-11-02&sr=c&sig=6mUqfaiG4rJpODZfuGTBvR79KD2kdFcXm6%2F3t7aPVJo%3D';
+    const storageAccountName = 'imgreadupload';
+    // const storageAccountURL = 'sp=rcwl&st=2023-07-17T14:50:01Z&se=2023-08-17T22:50:01Z&spr=https&sv=2022-11-02&sr=c&sig=6mUqfaiG4rJpODZfuGTBvR79KD2kdFcXm6%2F3t7aPVJo%3D';
 
     const uploadUrl = `https://${storageAccountName}.blob.core.windows.net/?${sasToken}`;
     const blobService = new BlobServiceClient(uploadUrl);
@@ -22,7 +22,8 @@ async function Uploadimg(image){
 
     // End
 
-    imageurl = `https://testuploadimg2002.blob.core.windows.net/uploaded/${image.name}`;
+    imageurl = `https://imgreadupload.blob.core.windows.net/uploaded/${image.name}`;
+    console.log(imageurl);
 
     return (imageurl);
 }

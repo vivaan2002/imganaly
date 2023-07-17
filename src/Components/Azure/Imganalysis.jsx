@@ -1,12 +1,12 @@
 
 async function Imganalysis(img_url) {
   console.log("Clicked");
-    const response = await fetch("https://test292002.cognitiveservices.azure.com/computervision/imageanalysis:analyze?api-version=2023-02-01-preview&features=read,caption&language=en", {
+    const response = await fetch("https://imgreader.cognitiveservices.azure.com/computervision/imageanalysis:analyze?api-version=2023-02-01-preview&features=read,caption&language=en", {
       method: 'POST',
       body: `{"url": "${img_url}"}`,
       headers: {
         'Content-Type': 'application/json',
-        'Ocp-Apim-Subscription-Key': 'de416ad15fe44755b364ab99f8ae1dec' 
+        'Ocp-Apim-Subscription-Key': 'f8f8f394a02f47d58b6024de8a1a0405' 
       }
     });
     console.log(response);

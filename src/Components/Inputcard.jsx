@@ -16,7 +16,8 @@ const Inputcard = () => {
             return;
         }    
         console.log("Hello World");
-        await Uploadimg(image).then(async (res)=>{setimageUrl(res);await Imganalysis(res).then((res)=>{settext(res);})});
+        await Uploadimg(image).then(async (res)=>{await Imganalysis(res).then((res)=>{settext(res);})});
+        setimageUrl(URL.createObjectURL(image));
 
         setvisiblness("visible");
     }

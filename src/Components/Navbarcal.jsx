@@ -4,7 +4,7 @@ import { Nav, Navbar } from 'react-bootstrap';
 const Navbarcal = () => {
   return (
     <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="/">Image OCR</Navbar.Brand>
+        <Navbar.Brand href="/">Image Reader</Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Nav className="me-auto">
